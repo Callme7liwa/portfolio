@@ -14,14 +14,14 @@ const PersonalInformation = ({mode}) => {
           value : "Moroccan",
         },
         {
-          name : "City",
+          name : "Country - City",
           image : Images.city_icon,
-          value  : "fes" , 
+          value  : "France - Aubiere" , 
         },
         {
           name : "Location",
           image : Images.location_icon,
-          value : "30 rue hay salam Rte bourkaiz",
+          value : "15 rue roche genes",
         },
         {
           name : "Civil State",
@@ -32,23 +32,30 @@ const PersonalInformation = ({mode}) => {
 
     const listFormations = [
     {
+        universityImage : Images.isima_logo,
+        universityName  : "Higher Institute of Computer Science, Modeling, and their Applications - France",
+        title           : "Double Degree in Engineering - Software Engineering",
+        period          : "sept. 2023 - sept. 2025",
+        comptences      : ["html","php","java","c#","software architectures","systems design", "dockers", "kubernetes", "git"]
+    },
+    {
         universityImage : Images.ensias_logo,
-        universityName  : "National School of Computer Science and Systems Analysis of rabat ",
-        title           : "Engineering degree, IDSIT: DATA SCIENCE & IOT",
+        universityName  : "National School of Computer Science and Systems Analysis - Maroc",
+        title           : "Engineering degree - IDSIT: DATA SCIENCE & IOT",
         period          : "sept. 2021 - juil. 2024",
-        comptences      : ["html","php","java",".net","android","data structure","jee","js","uml","merise","sql","sql server","oracle database","administration windows" , "administration unix","methodes agile","analays de donnees","datawarehouse"]
+        comptences      : ["html","php","java",".net","android","data structure","jee","js","uml","merise","sql","sql server","oracle database","windows administration" , "unix administration","agile methods","data analysis","data warehouse","Git"]
     },
     {
         universityImage : Images.logo_fst,
-        universityName : "Faculty of Sciences and Techniques of Fes",
-        title : "bachelor's degree, computer engineering",
+        universityName : "Faculty of Sciences and Techniques - Maroc ",
+        title : "bachelor's degree - computer engineering",
         period          : "sept. 2021 - juil. 2024",
         comptences : ["html", "css","js","php","java","C++","Swing","sql","Uml","merise","tcp/ip","unix"],
     },
     {
         universityImage : Images.logo_fst,
-        universityName : "Faculty of Sciences and Techniques of Fes",
-        title : "Diploma of scientific and technical university studies (DEUST), Mathematics Computer physics",
+        universityName : "Faculty of Sciences and Techniques - Maroc",
+        title : "Diploma of scientific and technical university studies (DEUST) - Mathematics, Computer Science, and Physics",
         period          : "sept. 2021 - juil. 2024",
         comptences      : ["Algorithms" , "C" , "Mathematical Analysis" , "Linear algebra" , "Arduino"]
     }
@@ -123,7 +130,7 @@ const PersonalInformation = ({mode}) => {
 
     const RenderFormations = () => {
       return (
-            <div className="bodysecond-right">
+            <div id="formations" className="body-container bodysecond-right">
                 <div className="body-title">
                     <img src={Images.formation_icon} className={`${mode==1 ? 'light-border-blue' : ''} `} />
                     <span className={`${mode==1 ? 'text-light light-title' : ''} `}> Formations </span>
@@ -144,7 +151,7 @@ const PersonalInformation = ({mode}) => {
       <div className="bodysecond-container">
             {/*  */}
             <RenderMyInfo />
-            <RenderFormations />
+            <RenderFormations  />
       </div>
     )
   }

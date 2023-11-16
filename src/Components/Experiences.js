@@ -4,22 +4,47 @@ const Experiences = ({mode}) => {
     
     const listExepriences = [
         {
+          image : Images.bk_logo,
+          name  : "Burger King",
+          title : "Versatile Team Member - France",
+          mission : "Enhancing customer experience through efficient transactions and precise order preparation as a versatile team member",
+          description : "elivering exceptional customer service by efficiently handling transactions, preparing accurate orders, and maintaining a clean work environment as a versatile team member. Committed to ensuring a seamless and positive experience for customers, contributing to the overall success of the team.",
+          period : "Sept. 2022 - Present · 1+ months",
+        },
+        {
+          image : Images.alkhayam_cars,
+          name  : "Alkhaym Cars",
+          title : "Full Stack Enginner - Maroc",
+          mission : "Design and Implementation of a platform to manage all aspects of reservation projects, from planning to delivery.",
+          description : "Developing a mobile application for a car rental agency, streamlining the reservation process, and providing quick access to a variety of vehicles.",
+          period : "Jul. 2022 - Aug 2023 · 2 month",
+          technologies : ["figma","flutter","laravel","redux","git","github","uml"]
+        },
+        {
           image : Images.elr12_logo,
           name  : "Elr12",
-          title : "Full Stack Enginner",
-          mission : " Design and Implementation of a Project Management Application.",
+          title : "Full Stack Enginner - Maroc",
+          mission : "Design and Implementation of a Project Management Application.",
           description : "I developed a custom web-based project management application for a company, providing an end-to-end solution for planning, collaborating, and overseeing projects. With an intuitive and user-friendly interface, team members can easily track tasks, deadlines, and budgets while staying informed of real-time updates. This application has enabled productivity optimization and improved communication among team members, resulting in more efficient and effective project delivery.",
-          period : "Jul. 2022 - août 2022 · 2 month",
+          period : "Jul. 2022 - Aug 2022 · 2 month",
           technologies : ["java","spring boot","mongodb","react js","redux","git","github","uml"]
         },
         {
           image : Images.logo_fst,
-          name  : "Faculty of Sciences and Techniques of Fes",
+          name  : "Faculty of Sciences and Techniques of Fes - Maroc",
           title : "Full Stack Enginner",
           mission : "Development and design of a web platform for Moroccan heritage management",
           description : "This end-of-studies project, carried out within the LSIA (laboratory Intelligent Systems and applications), had as its objective , the implementation of a management system for the  Moroccan cultural heritage. This system aims to automate the registration, querying and accessing information mainly concerning the categories of the following heritage: historic buildings, archaeological sites and cultural objects. " ,
           period : "mai 2021 - Jun 2021 · 2 month",
           technologies : ["php","laravel","js","jquery","mysql","uml"]
+        },
+        {
+          image : Images.macdo_logo,
+          name  : "Macdonald's",
+          title : "Versatile Team Member - Maroc",
+          mission : "Enhancing customer experience through efficient transactions and precise order preparation as a versatile team member",
+          description : "elivering exceptional customer service by efficiently handling transactions, preparing accurate orders, and maintaining a clean work environment as a versatile team member. Committed to ensuring a seamless and positive experience for customers, contributing to the overall success of the team.",
+          period : "Jun. 2022 - Sept · 3+ months",
         },
       ];
 
@@ -43,7 +68,7 @@ const Experiences = ({mode}) => {
                     <i className={`${mode==1 ? 'light-border-blue' : ''} fa fa-angle-right `}></i>
                     {item.mission}
                   </span>
-                  <div className="experience-description ">
+                  <div className={`${mode==1 ? 'text-light' : ''} experience-description  `}>
                      {item.description}
                   </div>
                   <div className="list-specialities">
@@ -77,7 +102,7 @@ const Experiences = ({mode}) => {
     }
 
     return (
-      <div className="bodysecond-container">
+      <div id="experiences" className="body-container bodysecond-container">
             {/*  */}
             <RenderExperiences />
             <div className={`${mode==1 ? 'line-body-light' : ''} line-body`}></div>

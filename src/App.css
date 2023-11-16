@@ -20,15 +20,15 @@
 }
 
 body {
+  position: absolute;
+  left: 0;
+  width: 100%;
   background-color: var(--color-bg-light);
-  background-color: var(--color-bg-light );
 }
 
 .page-container {
-  position: relative ; 
-  width: 100%;
+  position: absolute ; 
   background-color: var(--color-bg-dark);
-  padding-bottom: 100px;
 }
 
 .light-background {
@@ -167,19 +167,6 @@ body {
   color: var(--color-orange);
 }
 
-/* .header-switch-mode span {
-  position: absolute;
-  left: 4px;
-  min-width: 20px;
-  min-height: 20px;
-  border-radius: 50%;
-  background-color:blue;
-}
-
-.header-switch-mode span:last-child{
-  right: 4px;
-} */
-
 /* BODY */
 
 .list-body {
@@ -251,11 +238,18 @@ body {
 
 .left_content-first div:nth-child(2) > span:last-child {
   font-size: 9px;
-  color: #616161;
   text-align: justify;
   display:flex;
   flex-direction: column;
   row-gap: 5px;
+}
+
+.left_content-first div:nth-child(2) > .light-bare {
+  color: #616161;
+}
+
+.left_content-first div:nth-child(2) > .dark-bare{
+  color: rgba(255, 255, 255, 0.595);
 }
 
 /* Dark mode  */
@@ -430,7 +424,6 @@ body {
   background: linear-gradient(to right , rgba(2, 2, 2, 0),rgba(2, 2, 2, 0),var(--color-orange),rgba(2, 2, 2, 0),rgba(2, 2, 2, 0));
 }
 
-
 /*  */
 
 .bodysecond-container {
@@ -439,8 +432,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   column-gap: 10px;
-  top: 10vh;
   padding: 5px;
+  margin-top: 10vh;
+}
+
+.body-container {
+  margin-top: -5vh;
 }
 
 .bodysecond-container .bodysecond-left {
@@ -564,7 +561,7 @@ body {
   width: 20px;
 }
 
-.bodysecond-container .bodysecond-right {
+ .bodysecond-right {
   position: relative;
   width: 80%;
   left: 50%;
@@ -575,7 +572,7 @@ body {
   padding: 50px 0px ;
 }
 
-.bodysecond-container .bodysecond-right .body-title {
+ .bodysecond-right .body-title {
   position: relative;
   width: 100%;
   display: flex;
@@ -711,6 +708,7 @@ body {
   background: linear-gradient(to left , var(--color-orange),rgba(2, 2, 2, 0),rgba(2, 2, 2, 0));
 }
 
+
 /* LIGHT MODE  */
 .formation-item .item-title .item-university-info span:last-child::after{
   content: "";
@@ -766,7 +764,7 @@ body {
 .item-diplome-info .list-specialities div span {
   padding: 5px 10px;
   border-radius: 10px;
-  background-color: rgba(84, 84, 84, 0.441);
+  background-color: var(--color-orange);
   box-shadow: var(--box-shadow-1);
   color: white;
   font-size: 9px;
@@ -963,8 +961,6 @@ body {
   content: "";
   background: linear-gradient(to right , var(--color-blue-light),rgba(2, 2, 2, 0),rgba(2, 2, 2, 0));
 }
-
-
 
 /* .list-info-about-me .item-info::after{
   content: "";
@@ -1234,4 +1230,150 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-white{
+  color: white;
+}
+
+/* ----------------- FOOTER SECTION --------------------------- */
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 5px;
+  margin-top: 2rem;
+  align-items: center;
+  padding-bottom: 0;
+}
+
+.footer-section  .footer-section_top {
+  position: relative;
+  display: flex;
+}
+
+.line-vertical-container {
+  position: relative;
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+}
+
+.line-vertical-container .line{
+  position: relative;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to top , var(--color-blue-light),rgba(2, 2, 2, 0));
+}
+
+
+.footer-section_top .element {
+  position: relative;
+  display: flex;
+  font-family: "Nunito";
+  text-transform: uppercase;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.footer-section_top .element .title{
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.footer-section_top .element .list_info{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  color: black;
+  font-family: "Nunito";
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.element .list_info a {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.element .list_info a div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  column-gap: 5px;
+  cursor: pointer;
+}
+
+.element .list_info a div span {
+  color:white;
+}
+
+.element .list_info a::after{
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(to left , var(--color-blue-light),rgba(2, 2, 2, 0));
+}
+
+.element .list_info a:last-child:after{
+  content: "";
+  height: 0px;
+}
+
+.element .list_info a div img {
+  width: 12px;
+  height: 12px;
+}
+
+.footer-section_bottom{
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+}
+
+.footer-section_bottom .section_left {
+  position: relative;
+  gap: 0.3rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito";
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+
+.footer-section_bottom .section_left  img{
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+}
+
+a{
+  text-decoration: none;
 }

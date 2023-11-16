@@ -10,9 +10,13 @@ import city_icon from "./city_icon.png";
 import formation_icon from "./formation_icon.png"
 import logo_fst from "./logo_fst.png"
 import ensias_logo from "./ensias_logo.png";
+import isima_logo from "./isima_logo.png";
 import experience_icon from "./experiences_ico.png"
 import elr12_logo from "./elr12_logo.jpeg";
+import alkhayam_cars from "./alkhayam_cars.png";
 import project_icon from "./projects_icon.png";
+import bk_logo from "./bk_logo.png";
+import macdo_logo from "./macdo_logo.png";
 import web_dev_1 from "./web_dev.png"
 import web_dev_2 from "./web_dev_1.png";
 import web_dev_3 from "./web_dev_2.png";
@@ -22,6 +26,7 @@ import web_dev_6 from "./web_dev_5.png";
 import web_dev_7 from "./web_dev_6.png";
 import web_dev_8 from "./web_dev_7.png";
 import web_dev_9 from "./web_dev_8.png";
+import web_dev_10 from "./web_dev_10.jpg";
 import mobil_dev_1 from "./mobil_dev.jpg";
 import project_name_icon from "./project_name_icon.png"
 import flash_back_icon from "./flashBack_icon.png"
@@ -32,6 +37,31 @@ import images_icon from "./size_icon.png";
 import reseaux_sociaux from "./reseauxsociaux.png"
 import design from "./design.png";
 import apprentissage from "./apprentissage.png"
+import checked from "./checked.png"
+import icon_env from "./icon_env.png"
+import icon_tele from "./icon_tele.png"
+import react_icon from "./react_icon.png"
+import icon_css from "./icon_css.png"
+import copyright from "./copyright.png"
+
+import baby_1 from "./baby/baby_1.png";
+import baby_2 from "./baby/baby_2.png";
+import baby_3 from "./baby/baby_3.png";
+import baby_4 from "./baby/baby_4.png";
+import baby_5 from "./baby/baby_5.png";
+import baby_6 from "./baby/baby_6.png";
+
+import foot_1 from "./foot/foot_1.jpeg";
+import foot_2 from "./foot/foot_2.jpeg";
+import foot_3 from "./foot/foot_3.jpeg";
+import foot_4 from "./foot/foot_4.jpeg";
+import foot_5 from "./foot/foot_5.jpeg";
+import foot_6 from "./foot/foot_6.jpeg";
+import foot_7 from "./foot/foot_7.jpeg";
+import foot_8 from "./foot/foot_8.jpeg";
+import foot_9 from "./foot/foot_9.jpeg";
+import foot_10 from "./foot/foot_10.png";
+import foot_11 from "./foot/foot_11.png";
 
 import rap_1 from "./rap/rap_1.jpeg";
 import rap_2 from "./rap/rap_2.jpeg";
@@ -127,10 +157,12 @@ import patri_18 from "./patrimoin/patri_18.png";
 export default {
     profile_image,image_principal,git_hub,post_man,react_js,
     birthday_icon,location_icon,nationality_icon,city_icon,
-    formation_icon,logo_fst,ensias_logo,experience_icon,elr12_logo,
+    formation_icon,logo_fst,ensias_logo,isima_logo,experience_icon,elr12_logo,alkhayam_cars,
     project_icon,web_dev_1,web_dev_2,web_dev_3,web_dev_4,project_name_icon,flash_back_icon,title_icon,more_icon,
-    period_icon,web_dev_5,web_dev_6,web_dev_7,mobil_dev_1,web_dev_8,web_dev_9,images_icon,
-    reseaux_sociaux,apprentissage,design,
+    period_icon,web_dev_5,web_dev_6,web_dev_7,mobil_dev_1,web_dev_8,web_dev_9,images_icon,bk_logo,macdo_logo,
+    reseaux_sociaux,apprentissage,design,web_dev_10,checked,icon_env,icon_tele,react_icon,icon_css,copyright,
+    baby_1,baby_2,baby_3,baby_4,baby_5,baby_6,
+    foot_1,foot_2,foot_3,foot_4,foot_5,foot_6,foot_7,foot_8,foot_9,foot_10,foot_11,
     rap_1,rap_2,rap_3,rap_4,rap_5,rap_6,rap_7,rap_8,rap_9,rap_10,
     school_1,school_2,school_3,school_4,school_5,school_6,school_7,school_8,school_9,school_10,school_11,school_12,
     stream_1,stream_2,stream_3,stream_4,stream_5,stream_6,stream_7,stream_8,stream_9,stream_10,stream_11,stream_12,stream_13,stream_14,stream_15,stream_16,

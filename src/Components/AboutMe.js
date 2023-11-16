@@ -24,16 +24,6 @@ const AboutMe = ({mode}) => {
     
     const RenderInformations = () => {
       
-      const RenderInfoItem = ({item}) => {
-        return (
-            <div className={`${mode==1 ? 'item-info-light' : ''} item-info`}>
-              <span className={`${mode==1 ? 'text-light' : ''} `}>
-                {item}
-              </span>
-            </div>
-        )
-      }
-
     const RenderInformationItem = ({item}) => {
       return (
         <div className={`${mode==1 ? 'project-item-light' : ''} project-item`}>
@@ -73,7 +63,7 @@ const AboutMe = ({mode}) => {
     }
 
     return (
-      <div className="bodysecond-container">
+      <div className="body-container bodysecond-container">
         {/*  */}
         <RenderInformations />
       </div>

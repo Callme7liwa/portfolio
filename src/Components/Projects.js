@@ -11,6 +11,14 @@ const Projects = ({mode}) => {
 
     const listProjects = [
         {
+          image : Images.web_dev_10 , 
+          name  : "TeamUp",
+          description : "Developed a groundbreaking mobile application aimed at bringing together street football teams and players. The app streamlines the process of finding opponents for teams and provides players with an easy way to discover teams to join. Key features include team-initiated match requests and the ability for teams to announce openings that interested players can sign up for. This dynamic platform transforms match organization and strengthens the community of street football enthusiasts.",
+          technologies : ["Dart","Flutter","","git","github"],
+          duration : "Current Working",
+          images : [Images.foot_10,Images.foot_11]
+        },
+        {
           image : Images.web_dev_6,
           name : "Streaming Pro",
           description : "As part of my ongoing professional development, I am working on a new iteration of a full-stack web development project that I previously completed. The project involves creating an audio streaming platform with advanced marketing capabilities, using a different set of technologies than the previous version. I am developing the platform using a variety of languages and frameworks, including React.js, Spring boot and MongoDB, and incorporating new features such as user analytics, custom branding options, and targeted advertising. This project is being undertaken in conjunction with my other coursework and professional commitments, and is a testament to my ongoing dedication to staying up-to-date with the latest trends and technologies in web development .",
@@ -23,15 +31,15 @@ const Projects = ({mode}) => {
           name : "Baby Monitoring",
           description : 
           "currently working on a baby monitoring project that utilizes Android Studio, Machine Learning (ML), and Internet of Things (IoT) technologies. The aim of this project is to develop a baby monitoring system that can detect baby behaviors using motion and temperature sensors, and send real-time alerts to a mobile application. This project provides an excellent opportunity for us to deepen our skills in Android app development, ML, and IoT, while contributing to improving the safety and well-being of babies",
-          duration : "Currently Working",
+          duration : "Feb.2023 - Jun.2023",
           technologies : ["java","android","arduino" , "redux" , "git" , "github"],
-          images : []
+          images : [Images.baby_1,Images.baby_2,Images.baby_3,Images.baby_4,Images.baby_5,Images.baby_6]
         },
         {
           image : Images.web_dev_4,
           name : "School Mate",
           description : "I designed and developed a web-based school management application that provides a centralized solution for managing student data, teacher information, grades, and absences. My application allowed the school to effectively manage their academic processes, improve communication between students and teachers, and track student progress in real-time. I worked closely with the school administrators to understand their needs, which enabled me to design a user-friendly and intuitive interface that met their specific requirements.",
-          duration : "oct. 2022 - janv. 2023",
+          duration : "oct.2022 - jan.2023",
           technologies : ["java","Jee","Servlets","Jsp","js" , "git" , "github"],
           images : [Images.school_1,Images.school_2,Images.school_3,Images.school_4,Images.school_5,Images.school_6,Images.school_7,Images.school_8,Images.school_9,Images.school_10,Images.school_11,Images.school_12]
         },
@@ -39,7 +47,7 @@ const Projects = ({mode}) => {
           image : Images.web_dev_1,
           name : "Project Vision",
           description : "I designed and developed a web-based project management application for a company, offering a centralized solution for project planning, collaboration, and tracking. My application enabled the company to efficiently manage projects, improve communication and collaboration among team members, and track progress in real-time. I worked closely with team members to understand their needs, which allowed me to design a user-friendly and intuitive interface that met their specific requirements.",
-          duration : "Jul. 2022 - août 2022 · 2 month",
+          duration : "Jul.2022 - Aug.2022",
           technologies : ["java","spring boot","react js" , "redux" ,"git" , "github"],
           images : [Images.project_1,Images.project_2,Images.project_3,Images.project_4,Images.project_5,Images.project_6,Images.project_7,Images.project_8,Images.project_9,Images.project_10,Images.project_11,Images.project_12,Images.project_13,Images.project_14,Images.project_15,Images.project_16,Images.project_17,Images.project_18,Images.project_19,Images.project_20,Images.project_21,Images.project_22,Images.project_23,Images.project_24,Images.project_25,Images.project_26,Images.project_27,Images.project_28,Images.project_29]
         },
@@ -47,7 +55,7 @@ const Projects = ({mode}) => {
           image : Images.web_dev_3,
           name : "Stream Merch",
           description : "I worked on an ambitious project to create a streaming platform for artists that also includes an online store for selling artist-related products. My project enabled artists to live stream their music, reach a wider audience, and sell their products directly to their fans. I collaborated with a multidisciplinary team to design a user-friendly interface that provides an optimal user experience while allowing artists to easily manage their content and sales. My project was a great success, allowing artists to generate additional revenue through the sale of products related to their music while offering fans a unique music streaming experience.",
-          duration : "mars 2022 - juin 2022",
+          duration : "march.2022 - Jun.2022",
           technologies : ["php","laravel","react js" , "redux" , "mysql", "git" , "github"],
           images : [Images.stream_1,Images.stream_2,Images.stream_3,Images.stream_4,Images.stream_5,Images.stream_6,Images.stream_8,Images.stream_9,Images.stream_10,Images.stream_11,Images.stream_12,Images.stream_13,Images.stream_14,Images.stream_15,Images.stream_16]
         },
@@ -56,7 +64,7 @@ const Projects = ({mode}) => {
           name : "Patrimoine Maghreb",
           description : "i had the honor of working on a project that focused on the management of moroccan cultural heritage, aiming to preserve and promote the country's cultural treasures. as a web developer, i worked closely with experts in cultural heritage to create an interactive and educational platform for visitors from around the world. this platform allowed users to explore historical sites, museums, and cultural events through photos, videos, and detailed descriptions. it also provided practical information to help visitors plan their trips. through this project, i was able to contribute to the preservation of morocco's cultural heritage and promote its cultural tourism across the globe.",
           technologies : ["php","laravel","react js" , "redux" , "mysql", "git" , "github"],
-          duration : "mai. 2021 - jun 2021 · 2 month",
+          duration : "may.2021 - jun.2021",
           images : [Images.patri_1,Images.patri_2,Images.patri_3,Images.patri_4,Images.patri_5,Images.patri_6,Images.patri_7,Images.patri_8,Images.patri_9,Images.patri_10,Images.patri_11,Images.patri_12,Images.patri_13,Images.patri_14,Images.patri_15,Images.patri_16,Images.patri_17,Images.patri_18]
         },
         {
@@ -64,15 +72,15 @@ const Projects = ({mode}) => {
           name  : "IT Equipment Keeper",
           description : "The IT Department Equipment Management project involves the development of a desktop application to manage the inventory and operations of a warehouse that stores various IT equipment such as computers, printers, servers, and other hardware devices. The application aims to provide an efficient solution for managing the equipment inventory, tracking equipment usage, maintenance schedules, and ordering new equipment as necessary. The application is designed to be user-friendly, with features such as equipment categorization, search, and reporting capabilities to allow IT department staff to easily manage the warehouse operations. The goal of the project is to optimize the IT department's equipment management processes, reduce equipment downtime, and ensure the smooth functioning of the organization's IT infrastructure.",
           technologies : ["php","laravel","Html" , "css pure" , "jquery", "js", "git" , "github"],
-          duration : "february. 2021 - mars. 2021 . 2 month",
+          duration : "feb.2021 - march.2021",
         },
         {
           image : Images.web_dev_9 , 
           name  : "GeoHeritage",
           description : "This project involves developing a web application that will showcase the history, geography, and monuments of a region, country, or even the entire world. The application will provide detailed information on each historical monument or tourist site, interactive maps to help users locate the sites, and images to illustrate the monuments and their history. It will also allow users to plan guided tours, share comments and photos, and discover additional information about the featured sites. The goal is to provide an educational and engaging platform for history enthusiasts and tourists.",
           technologies : ["php","Html" , "css pure" , "jquery", "js", "git" , "github"],
-          duration : "oct. 2020 - janv. 2021",
-        }
+          duration : "oct. 2020 - jan. 2021",
+        },
     ]
 
     const ShowImage = () => {
@@ -144,7 +152,7 @@ const Projects = ({mode}) => {
                 </div>
               </div>
               <div className="project-action">
-                <span className={`${mode==1 ? 'light-blue' : ''} `} onClick={()=>{setCurrentProject(item);setShowMoreInfo(true)}}><i className="fa fa-angle-right"></i> More </span>
+                <span className={`${mode==1 ? 'light-blue' : ''} clickable`} onClick={()=>{setCurrentProject(item);setShowMoreInfo(true)}}><i className="fa fa-angle-right"></i> More </span>
               </div>
           </div>
         )
@@ -171,7 +179,7 @@ const Projects = ({mode}) => {
     return (
         <>
         {showMoreInfo === true ? <ShowMoreInfo /> : <></>}
-        <div className="bodysecond-container">
+        <div id="projects" className="body-container bodysecond-container ">
             {/*  */}
             <RenderProjects />
         </div>

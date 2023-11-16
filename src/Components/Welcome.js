@@ -1,8 +1,16 @@
 import Images from "../Images";
 
-const Welcome = ({mode}) => {
+const Welcome = ({mode,handleClick,emailAddress}) => {
 
     const BodyLeft = () => {
+
+      // const emailAddress = 'ayoubseddiki132@gmail.com'
+
+      // const handleEmailClick = () => {
+      //   const mailtoLink = `mailto:${emailAddress}`;
+      //   window.open(mailtoLink);
+      // };
+
       return(
         <div className="body_left-container">
           <div className="left_content-first">
@@ -15,7 +23,7 @@ const Welcome = ({mode}) => {
                 Show me the code &nbsp;
                 <span className={`${mode==1 ? 'text-blue' : ''} operator`}>&lt; /&gt; .</span>
               </span>
-              <span className={`${mode==1 ? 'light-bare' : ''} `}>
+              <span className={`${mode==1 ? 'light-bare' : 'dark-bare'} `}>
                 I am passionate about software development and design, and enjoy
                 creating simple and elegant solutions that meet the needs of
                 users. I am constantly striving to improve my skills and
@@ -28,10 +36,10 @@ const Welcome = ({mode}) => {
                   <span ><i className={`${mode==1 ? 'light-blue' : ''} fa fa-envelope`}/></span>
                   <span className={`${mode==1 ? 'text-light' : ''} email`}> 
                     <i className="fa fa-long-arrow-right"></i>
-                    ayoubseddiki132@gmail.com
+                     {emailAddress}
                     <i className="fa fa-long-arrow-left"></i>
                   </span>
-                  <span className={`${mode==1 ? 'light-blue' : ''}`}>contact me  <i className="fa fa-angle-right"></i></span>
+                  <span onClick={handleClick} className={`${mode==1 ? 'light-blue' : ''}`}>contact me  <i className="fa fa-angle-right"></i></span>
                </span>
             </div>
           </div>

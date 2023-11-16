@@ -6,23 +6,32 @@ import PersonalInformation from "./Components/PersonalInformation";
 import Projects from "./Components/Projects";
 import Welcome from "./Components/Welcome";
 import Images from "./Images";
+import Footer from "./Components/Footer";
 
 function App() {
+
+  const emailAddress = 'ayoubseddiki132@gmail.com'
+
+  const handleSendEmail = (e) => {
+    e.preventDefault();
+    const mailtoLink = `mailto:${emailAddress}`;
+    window.open(mailtoLink);
+  };
 
   const [mode , setMode] = useState(1);
 
   const navBarNavigations = [
     {
+      name : "Formations",
+      href : "#formations"
+    },
+    {
+      name : "experiences",
+      href : "#experiences"
+    },
+    {
       name : "projects",
-      href : ""
-    },
-    {
-      name : "services",
-      href : ""
-    },
-    {
-      name : "Contact",
-      href : ""
+      href : "#projects"
     },
   ]
 
@@ -32,9 +41,9 @@ function App() {
     const RenderItemNavBar = ({item}) => {
       return (
         <li className={`${mode==1 ? 'text-light' : ''}`}>
-          <span className={`${mode==1 ? 'text-blue' : ''}operator`}>&lt; </span>
-          <span className=""> {item.name} </span>
-          <span className="operator text-blue"> / &gt; </span>
+          <a className={`${mode==1 ? 'text-blue' : ''}operator`}>&lt; </a>
+          <a href={item.href} className={`${mode==1 ? 'text-light' : 'text-white'}`}> {item.name} </a>
+          <a className="operator text-blue"> / &gt; </a>
         </li>
       )
     }
@@ -54,10 +63,10 @@ function App() {
           }
         </div>
         <div className="header_right-container">
-          <i className={`${mode==1 ? 'light-blue' : ''} fa fa-github `}></i>
-          <i className={`${mode==1 ? 'light-blue' : ''} fa fa-envelope `}></i>
-          <i className={`${mode==1 ? 'light-blue' : ''} fa fa-twitter `}></i>
-          <i className={`${mode==1 ? 'light-blue' : ''} fa fa-linkedin `}></i>
+          <a href="https://github.com/Callme7liwa"><i className={`${mode==1 ? 'light-blue' : ''} fa fa-github `}></i></a>
+          <span ><i onClick={handleSendEmail} className={`${mode==1 ? 'light-blue' : ''} fa fa-envelope `}></i></span>
+          <a href="https://twitter.com/callme7liwa"><i className={`${mode==1 ? 'light-blue' : ''} fa fa-twitter `}></i></a>
+          <a href="https://www.linkedin.com/in/seddiki--ayoub/"><i className={`${mode==1 ? 'light-blue' : ''} fa fa-linkedin `}></i></a>
         </div>
         <div className="header-switch-mode"> 
           <div className="switch-content">
@@ -76,11 +85,12 @@ function App() {
     <div className={`${mode===1 ? 'light-background' : ''} page-container`}>
       <Header />
       <div className="list-body">
-        <Welcome mode={mode} />
+        <Welcome handleClick={handleSendEmail} mode={mode}  emailAddress={emailAddress} />
         <PersonalInformation mode={mode} />
         <Experiences mode={mode}/>
         <Projects mode={mode}/>
         <AboutMe mode={mode}/>
+        <Footer mode={mode} />
       </div>
     </div>
   );
